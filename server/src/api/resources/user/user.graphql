@@ -1,0 +1,19 @@
+type User {
+  id: ID!
+  username: String!
+  playlists: [Playlist]!
+  createdAt: String!
+  updatedAt: String!
+}
+
+input UpdatedUser {
+  username: String!
+}
+
+type Query {
+  getMe: User!
+}
+
+type Mutation {
+  updateMe: User!
+}
